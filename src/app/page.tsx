@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { helloWorld, hello } from "@/lib/utils";
 
 export default function Home() {
   return (
@@ -12,6 +13,10 @@ export default function Home() {
           height={38}
           priority
         />
+        <div className="text-center sm:text-left">
+          <h1 className="font-semibold text-2xl mb-2">{helloWorld()}</h1>
+          <p className="text-lg">{hello("Modu")}</p>
+        </div>
         <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
           <li className="mb-2 tracking-[-.01em]">
             Get started by editing{" "}
