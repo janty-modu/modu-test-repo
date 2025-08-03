@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { goodbyeWorld } from "@/utils/greetings";
 
 export default function Home() {
   return (
@@ -24,6 +25,12 @@ export default function Home() {
             Save and see your changes instantly.
           </li>
         </ol>
+
+        <div className="text-center sm:text-left">
+          <p className="text-lg font-medium text-gray-800 dark:text-gray-200">
+            {goodbyeWorld()}
+          </p>
+        </div>
 
         <div className="flex gap-4 items-center flex-col sm:flex-row">
           <a
