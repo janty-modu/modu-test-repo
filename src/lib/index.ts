@@ -1,0 +1,1 @@
+export { helloWorld, helloName } from './hello';
