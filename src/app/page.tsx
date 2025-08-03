@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { helloWorld, helloName } from "@/lib";
+import { helloWorld, helloName, goodbyeWorld, goodbyeName } from "@/lib";
 
 export default function Home() {
   return (
@@ -8,6 +8,8 @@ export default function Home() {
         <div className="text-center mb-4">
           <h1 className="text-2xl font-bold mb-2">{helloWorld()}</h1>
           <p className="text-gray-600">{helloName("Developer")}</p>
+          <h2 className="text-xl font-semibold mt-4 mb-2">{goodbyeWorld()}</h2>
+          <p className="text-gray-600">{goodbyeName("Developer")}</p>
         </div>
         <Image
           className="dark:invert"
