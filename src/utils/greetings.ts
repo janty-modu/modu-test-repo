@@ -3,6 +3,23 @@
  */
 
 /**
+ * Returns a hello world message
+ * @returns A hello world string
+ */
+export function helloWorld(): string {
+  return "Hello, World!";
+}
+
+/**
+ * Returns a personalized hello message
+ * @param name - The name to include in the hello message
+ * @returns A personalized hello string
+ */
+export function helloMessage(name?: string): string {
+  return name ? `Hello, ${name}!` : helloWorld();
+}
+
+/**
  * Returns a goodbye world message
  * @returns A goodbye world string
  */

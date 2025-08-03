@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { goodbyeWorld } from "@/utils/greetings";
+import { helloWorld, goodbyeWorld } from "@/utils/greetings";
 
 export default function Home() {
   return (
@@ -28,6 +28,9 @@ export default function Home() {
 
         <div className="text-center sm:text-left">
           <p className="text-lg font-medium text-gray-800 dark:text-gray-200">
+            {helloWorld()}
+          </p>
+          <p className="text-lg font-medium text-gray-800 dark:text-gray-200 mt-2">
             {goodbyeWorld()}
           </p>
         </div>
