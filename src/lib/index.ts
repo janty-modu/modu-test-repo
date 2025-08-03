@@ -1,0 +1,1 @@
+export { hello, world, helloWorld, helloName, goodbyeWorld, goodbyeName } from './hello';
