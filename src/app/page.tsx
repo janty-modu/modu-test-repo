@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { helloWorld } from "@/utils";
+import { helloWorld, goodbyeWorld } from "@/utils";
 
 export default function Home() {
   return (
@@ -20,6 +20,16 @@ export default function Home() {
           </p>
           <p className="text-sm text-gray-600 dark:text-gray-400">
             {helloWorld("Next.js Developer")}
+          </p>
+        </div>
+
+        <div className="mb-8 p-4 bg-green-50 dark:bg-green-950 rounded-lg">
+          <h2 className="text-lg font-semibold mb-2">Goodbye World Function Demo</h2>
+          <p className="text-sm text-gray-600 dark:text-gray-400 mb-2">
+            {goodbyeWorld()}
+          </p>
+          <p className="text-sm text-gray-600 dark:text-gray-400">
+            {goodbyeWorld("Next.js Developer")}
           </p>
         </div>
 
