@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { helloWorld, goodbyeWorld } from "@/utils";
+import { helloWorld, goodbyeWorld, greetingWorld } from "@/utils";
 
 export default function Home() {
   return (
@@ -30,6 +30,22 @@ export default function Home() {
           </p>
           <p className="text-sm text-gray-600 dark:text-gray-400">
             {goodbyeWorld("Next.js Developer")}
+          </p>
+        </div>
+
+        <div className="mb-8 p-4 bg-purple-50 dark:bg-purple-950 rounded-lg">
+          <h2 className="text-lg font-semibold mb-2">🎉 Combined Greeting Function Demo</h2>
+          <p className="text-sm text-gray-600 dark:text-gray-400 mb-2">
+            <strong>Hello:</strong> {greetingWorld('hello')}
+          </p>
+          <p className="text-sm text-gray-600 dark:text-gray-400 mb-2">
+            <strong>Hello with name:</strong> {greetingWorld('hello', 'React Developer')}
+          </p>
+          <p className="text-sm text-gray-600 dark:text-gray-400 mb-2">
+            <strong>Goodbye:</strong> {greetingWorld('goodbye')}
+          </p>
+          <p className="text-sm text-gray-600 dark:text-gray-400">
+            <strong>Goodbye with name:</strong> {greetingWorld('goodbye', 'React Developer')}
           </p>
         </div>
 
