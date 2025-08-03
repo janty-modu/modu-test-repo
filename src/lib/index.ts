@@ -1,1 +1,1 @@
-export { helloWorld, helloName, goodbyeWorld, goodbyeName } from './hello';
+export { hello, world, helloWorld, helloName, goodbyeWorld, goodbyeName } from './hello';

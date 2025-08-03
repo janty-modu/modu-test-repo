@@ -1,9 +1,25 @@
 /**
- * Returns a hello world greeting
- * @returns A string containing the hello world message
+ * Returns "Hello"
+ * @returns A string containing "Hello"
+ */
+export function hello(): string {
+  return "Hello";
+}
+
+/**
+ * Returns "World!"
+ * @returns A string containing "World!"
+ */
+export function world(): string {
+  return "World!";
+}
+
+/**
+ * Calls both hello() and world() functions and combines them
+ * @returns A string containing the combined hello world message
  */
 export function helloWorld(): string {
-  return "Hello, World!";
+  return `${hello()}, ${world()}`;
 }
 
 /**
