@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { helloWorld, helloWorldPersonalized } from "@/utils";
 
 export default function Home() {
   return (
@@ -24,6 +25,14 @@ export default function Home() {
             Save and see your changes instantly.
           </li>
         </ol>
+
+        <div className="bg-gray-100 dark:bg-gray-800 p-4 rounded-lg border">
+          <h2 className="font-semibold text-lg mb-2">Hello World Function Demo</h2>
+          <div className="space-y-2 font-mono text-sm">
+            <p><strong>Basic:</strong> {helloWorld()}</p>
+            <p><strong>Personalized:</strong> {helloWorldPersonalized("Modu")}</p>
+          </div>
+        </div>
 
         <div className="flex gap-4 items-center flex-col sm:flex-row">
           <a
