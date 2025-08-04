@@ -1,1 +1,1 @@
-export { helloWorld, helloPersonalized } from './helloWorld';
+export { helloWorld, helloPersonalized, goodbyeWorld, goodbyePersonalized } from './helloWorld';
