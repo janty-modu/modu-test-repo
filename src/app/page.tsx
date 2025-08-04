@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { helloWorld, helloWorldPersonalized } from "@/lib/utils";
 
 export default function Home() {
   return (
@@ -12,6 +13,16 @@ export default function Home() {
           height={38}
           priority
         />
+        <div className="bg-blue-50 dark:bg-blue-900/20 p-4 rounded-lg border border-blue-200 dark:border-blue-800 mb-4">
+          <h2 className="font-semibold text-lg mb-2 text-blue-800 dark:text-blue-200">Hello World Functions Demo</h2>
+          <p className="text-blue-700 dark:text-blue-300 mb-2">
+            Basic greeting: <span className="font-mono bg-blue-100 dark:bg-blue-800 px-2 py-1 rounded text-sm">{helloWorld()}</span>
+          </p>
+          <p className="text-blue-700 dark:text-blue-300">
+            Personalized greeting: <span className="font-mono bg-blue-100 dark:bg-blue-800 px-2 py-1 rounded text-sm">{helloWorldPersonalized("Developer")}</span>
+          </p>
+        </div>
+
         <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
           <li className="mb-2 tracking-[-.01em]">
             Get started by editing{" "}
