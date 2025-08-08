@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { helloWorld } from "@/lib/utils";
 
 export default function Home() {
   return (
@@ -12,6 +13,15 @@ export default function Home() {
           height={38}
           priority
         />
+        <div className="text-center sm:text-left mb-8">
+          <p className="text-2xl font-semibold text-blue-600 dark:text-blue-400 mb-2">
+            {helloWorld()}
+          </p>
+          <p className="text-lg text-green-600 dark:text-green-400">
+            {helloWorld("Next.js Developer")}
+          </p>
+        </div>
+
         <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
           <li className="mb-2 tracking-[-.01em]">
             Get started by editing{" "}
