@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { helloWorld } from "@/utils";
+import { helloWorld, goodbyeWorld } from "@/utils";
 
 export default function Home() {
   return (
@@ -13,10 +13,17 @@ export default function Home() {
           height={38}
           priority
         />
-        <div className="mb-6 p-4 bg-blue-50 dark:bg-blue-900/20 rounded-lg border border-blue-200 dark:border-blue-800">
-          <p className="font-mono text-lg text-blue-800 dark:text-blue-200 text-center">
-            {helloWorld("Developer")}
-          </p>
+        <div className="mb-6 flex flex-col gap-4 sm:flex-row sm:gap-6">
+          <div className="p-4 bg-blue-50 dark:bg-blue-900/20 rounded-lg border border-blue-200 dark:border-blue-800">
+            <p className="font-mono text-lg text-blue-800 dark:text-blue-200 text-center">
+              {helloWorld("Developer")}
+            </p>
+          </div>
+          <div className="p-4 bg-purple-50 dark:bg-purple-900/20 rounded-lg border border-purple-200 dark:border-purple-800">
+            <p className="font-mono text-lg text-purple-800 dark:text-purple-200 text-center">
+              {goodbyeWorld("Developer")}
+            </p>
+          </div>
         </div>
 
         <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">

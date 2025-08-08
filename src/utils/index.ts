@@ -1,1 +1,1 @@
-export { helloWorld, helloWorldAsync } from './helloWorld';
+export { helloWorld, helloWorldAsync, goodbyeWorld, goodbyeWorldAsync } from './helloWorld';
