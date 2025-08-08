@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { helloWorld, goodbyeWorld, goodMorning, goodNight } from "@/utils";
 
 export default function Home() {
   return (
@@ -12,18 +13,17 @@ export default function Home() {
           height={38}
           priority
         />
-        <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] font-mono font-semibold px-1 py-0.5 rounded">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
+        <div className="font-mono text-sm/6 text-center sm:text-left space-y-4">
+          <div className="bg-black/[.05] dark:bg-white/[.06] font-mono font-semibold px-4 py-3 rounded space-y-2">
+            <p className="text-lg">{helloWorld()}</p>
+            <p className="text-lg">{goodMorning()}</p>
+            <p className="text-lg">{goodNight()}</p>
+            <p className="text-lg">{goodbyeWorld()}</p>
+          </div>
+          <p className="text-xs text-gray-600 dark:text-gray-400">
+            Functions available: <code>helloWorld()</code>, <code>goodMorning()</code>, <code>goodNight()</code>, and <code>goodbyeWorld()</code>
+          </p>
+        </div>
 
         <div className="flex gap-4 items-center flex-col sm:flex-row">
           <a
