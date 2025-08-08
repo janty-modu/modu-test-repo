@@ -14,3 +14,20 @@ export function helloWorld(): string {
 export function hello(name: string): string {
   return `Hello, ${name}!`;
 }
+
+/**
+ * A simple goodbye world function
+ * @returns A farewell message
+ */
+export function goodbyeWorld(): string {
+  return "Goodbye, World!";
+}
+
+/**
+ * A personalized goodbye function
+ * @param name - The name to bid farewell to
+ * @returns A personalized farewell message
+ */
+export function goodbye(name: string): string {
+  return `Goodbye, ${name}!`;
+}
