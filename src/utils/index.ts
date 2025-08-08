@@ -2,4 +2,4 @@
  * Utility functions exports
  */
 
-export { helloWorld, goodbyeWorld } from './greetings';
+export { helloWorld, goodbyeWorld, goodMorning, goodNight } from './greetings';

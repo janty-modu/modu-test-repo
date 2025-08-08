@@ -17,3 +17,19 @@ export function helloWorld(): string {
 export function goodbyeWorld(): string {
   return "Goodbye, World! 👋";
 }
+
+/**
+ * Greets the world with a fresh morning message
+ * @returns A cheerful good morning message
+ */
+export function goodMorning(): string {
+  return "Good Morning, World! 🌅";
+}
+
+/**
+ * Wishes the world a peaceful night
+ * @returns A soothing good night message
+ */
+export function goodNight(): string {
+  return "Good Night, World! 🌙";
+}

@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { helloWorld, goodbyeWorld } from "@/utils";
+import { helloWorld, goodbyeWorld, goodMorning, goodNight } from "@/utils";
 
 export default function Home() {
   return (
@@ -14,12 +14,14 @@ export default function Home() {
           priority
         />
         <div className="font-mono text-sm/6 text-center sm:text-left space-y-4">
-          <div className="bg-black/[.05] dark:bg-white/[.06] font-mono font-semibold px-4 py-3 rounded">
-            <p className="mb-2 text-lg">{helloWorld()}</p>
+          <div className="bg-black/[.05] dark:bg-white/[.06] font-mono font-semibold px-4 py-3 rounded space-y-2">
+            <p className="text-lg">{helloWorld()}</p>
+            <p className="text-lg">{goodMorning()}</p>
+            <p className="text-lg">{goodNight()}</p>
             <p className="text-lg">{goodbyeWorld()}</p>
           </div>
           <p className="text-xs text-gray-600 dark:text-gray-400">
-            Functions available: <code>helloWorld()</code> and <code>goodbyeWorld()</code>
+            Functions available: <code>helloWorld()</code>, <code>goodMorning()</code>, <code>goodNight()</code>, and <code>goodbyeWorld()</code>
           </p>
         </div>
 
