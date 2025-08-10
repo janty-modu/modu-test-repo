@@ -1,6 +1,8 @@
 import Image from "next/image";
+import { helloWorld } from "@/lib/hello";
 
 export default function Home() {
+  const greeting = helloWorld("Next.js Developer");
   return (
     <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
       <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
@@ -12,6 +14,15 @@ export default function Home() {
           height={38}
           priority
         />
+        <div className="mb-8 p-4 bg-blue-50 dark:bg-blue-900/20 rounded-lg border border-blue-200 dark:border-blue-800">
+          <p className="text-lg font-medium text-blue-900 dark:text-blue-100 text-center">
+            {greeting}
+          </p>
+          <p className="text-sm text-blue-700 dark:text-blue-300 text-center mt-2">
+            Powered by our custom hello world function!
+          </p>
+        </div>
+
         <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
           <li className="mb-2 tracking-[-.01em]">
             Get started by editing{" "}
