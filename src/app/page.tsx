@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { helloWorld } from "@/lib/hello";
 
 export default function Home() {
   return (
@@ -12,6 +13,12 @@ export default function Home() {
           height={38}
           priority
         />
+        <div className="mb-8 p-4 bg-blue-50 dark:bg-blue-950 rounded-lg border border-blue-200 dark:border-blue-800">
+          <h2 className="font-semibold text-lg mb-2">Hello World Function Demo</h2>
+          <p className="text-blue-800 dark:text-blue-200 mb-1">{helloWorld()}</p>
+          <p className="text-blue-800 dark:text-blue-200">{helloWorld("Developer")}</p>
+        </div>
+
         <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
           <li className="mb-2 tracking-[-.01em]">
             Get started by editing{" "}
