@@ -6,8 +6,8 @@ export function helloWorld(): string {
   return "Hello, World!";
 }
 
-export function goodByeWorld(): string {
-  return "Goodbye, World!";
+export function helloEveryone(): string {
+  return "Hello everyone!!!";
 }
 
 export function goodMorning(): string {
